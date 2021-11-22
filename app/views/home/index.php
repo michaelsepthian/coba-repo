@@ -77,7 +77,8 @@
                                 <td>Rp.<?php echo $order['harga']; ?></td>
                                 <td>Rp.<?php echo ($order['harga'] * $order['qty']); ?></td>
                                 <td><a href="<?php echo MYURL; ?>/home/update/<?php echo $order['id']; ?>" class="badge badge-success ml-2" style="margin-bottom: 2px; background-color: white; border-color:#783c00;color:#783c00;">Update</a>
-                                    <a href="<?php echo MYURL; ?>/home/delete/<?php echo $order['id']; ?>" onclick="return confirm('Apakah benar ingin menghapus?');" class="badge badge-danger ml-2 ">Delete</a></td>
+                                    <a href="<?php echo MYURL; ?>/home/delete/<?php echo $order['id']; ?>" onclick="return confirm('Apakah benar ingin menghapus?');" class="badge badge-danger ml-2 ">Delete</a>
+                                </td>
                             </tr>
                             <?php $no++; ?>
                         <?php endif ?>
@@ -100,6 +101,12 @@
         </div>
         <center><img src='<?php echo MYURL; ?>/img/spr.png' width='500px' height='100px;'>
             <h2 style="color:white; margin-bottom:90px,font-size=10px;"><i>~~~Kurang Atau Lebih, Setiap Rezeki Perlu Dirayakan Dengan Secangkir Kopi~~~</i></h2>
+        </center>
+    </div>
+
+    <div>
+        <center>
+
         </center>
     </div>
 
