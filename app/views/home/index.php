@@ -1,7 +1,7 @@
 <body style="background-image : url('<?php echo MYURL; ?>/img/background.jpg'); opacity :5;">
     <div class='container mt-5'>
         <center>
-            <h2 style="color:white; margin-top:90px">M E N U</h2>
+            <h2 style="color:white; margin-top:90px">M E N U R E S T O R A N T</h2>
             <img src='<?php echo MYURL; ?>/img/spr.png' width='500px' height='100px;'>
         </center>
         <div class="row">
@@ -77,7 +77,8 @@
                                 <td>Rp.<?php echo $order['harga']; ?></td>
                                 <td>Rp.<?php echo ($order['harga'] * $order['qty']); ?></td>
                                 <td><a href="<?php echo MYURL; ?>/home/update/<?php echo $order['id']; ?>" class="badge badge-success ml-2" style="margin-bottom: 2px; background-color: white; border-color:#783c00;color:#783c00;">Update</a>
-                                    <a href="<?php echo MYURL; ?>/home/delete/<?php echo $order['id']; ?>" onclick="return confirm('Apakah benar ingin menghapus?');" class="badge badge-danger ml-2 ">Delete</a></td>
+                                    <a href="<?php echo MYURL; ?>/home/delete/<?php echo $order['id']; ?>" onclick="return confirm('Apakah benar ingin menghapus?');" class="badge badge-danger ml-2 ">Delete</a>
+                                </td>
                             </tr>
                             <?php $no++; ?>
                         <?php endif ?>
